@@ -102,7 +102,7 @@ class ExtractMultipleFramesFilter implements VideoFilterInterface
     {
         $commands[] = '-r';
         $commands[] = $this->frameRate;
-        $commands[] = $this->destinationFolder . 'frame-%d.jpg';
+        $commands[] = $this->destinationFolder . 'frame-%d.' . $this->frameFileType;
 
         return $commands;
     }
